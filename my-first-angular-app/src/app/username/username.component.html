@@ -1,0 +1,15 @@
+<p>username works!</p>
+<label>User Names</label>
+<input 
+type="text"
+class="form-control"
+[(ngModel)] = "userName"
+>
+
+<button class="btn btn-primary" 
+[disabled] = "!allowNewUser"
+(click) = "onCreateUser()">
+Add User</button>
+
+<h3>Users</h3>
+<p>{{userCreationStatus}}</p>
